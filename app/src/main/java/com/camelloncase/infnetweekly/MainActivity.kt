@@ -1,9 +1,13 @@
 package com.camelloncase.infnetweekly
 
+import android.graphics.Typeface
 import android.os.Bundle
 import android.view.Menu
+import android.view.TextureView
 import android.view.View
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.widget.Toolbar
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.navigation.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -17,6 +21,8 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
+    private lateinit var toolbar: Toolbar
+    private lateinit var toolbarTitle: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -24,7 +30,11 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        setSupportActionBar(binding.appBarMain.toolbar)
+        toolbar = binding.appBarMain.customToolbar
+        toolbarTitle = binding.appBarMain.customToolbarTitle
+        val customFontFamily = Typeface.createFromAsset(this.assets, "font/kaushan_script.ttf")
+        toolbarTitle.setTypeface(customFontFamily)
+        setSupportActionBar(toolbar)
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
         val navView: NavigationView = binding.navView
@@ -36,7 +46,10 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_register -> enablingAppToolbar("gone")
                 R.id.nav_recover -> enablingAppToolbar("gone")
                 R.id.nav_initial -> enablingAppToolbar("gone")
-                R.id.nav_detail -> enablingAppToolbar("gone")
+                R.id.nav_detail -> {
+                    enablingAppToolbar("gone")
+//                    binding.appBarMain.toolbar = "Detail"
+                }
                 else -> enablingAppToolbar("visible")
             }
         }
@@ -62,8 +75,9 @@ class MainActivity : AppCompatActivity() {
 
     private fun enablingAppToolbar(state: String) {
         when (state) {
-            "gone" -> binding.appBarMain.toolbar.visibility = View.GONE
-            "visible" -> binding.appBarMain.toolbar.visibility = View.VISIBLE
+            "gone" -> binding.appBarMain.customToolbar.visibility = View.GONE
+            "visible" -> binding.appBarMain.customToolbar.visibility = View.VISIBLE
         }
     }
+
 }

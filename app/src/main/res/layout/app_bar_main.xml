@@ -12,11 +12,20 @@
         android:theme="@style/Theme.InfnetWeekly.AppBarOverlay">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+            android:id="@+id/custom_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:popupTheme="@style/Theme.InfnetWeekly.PopupOverlay" />
+            android:background="?attr/colorPrimary">
+
+            <TextView
+                android:id="@+id/custom_toolbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home"
+                android:textColor="#E0F2F1"
+                android:textSize="24sp" />
+
+        </androidx.appcompat.widget.Toolbar>
 
     </com.google.android.material.appbar.AppBarLayout>
 

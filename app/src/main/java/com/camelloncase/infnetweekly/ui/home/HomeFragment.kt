@@ -14,6 +14,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.camelloncase.infnetweekly.adapter.NotificationAdapter
+import com.camelloncase.infnetweekly.databinding.AppBarMainBinding
 import com.camelloncase.infnetweekly.databinding.FragmentHomeBinding
 import com.camelloncase.infnetweekly.model.Notification
 import com.camelloncase.infnetweekly.repository.NotificationApiRepository
