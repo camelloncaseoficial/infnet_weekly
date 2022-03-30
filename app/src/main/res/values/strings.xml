@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Infnet Weekly</string>
+    <string name="app_name_description">um calendário acadêmico da</string>
+    <string name="esti">ESTI</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Instituto Infnet</string>
+    <string name="nav_header_subtitle">Escola Superior de Tecnologia da Informação</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Sobre</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string name="password">Senha</string>
+    <string name="new_password">New password</string>
+    <string name="current_password">Current password</string>
+    <string name="name">Full name</string>
+    <string name="email">Email</string>
+    <string name="login">Login com email</string>
+    <string name="repeat_password">Confirm password</string>
+    <string name="signup">Entrar</string>
+    <string name="text_signup">Não tem uma conta?</string>
+    <string name="link_signup">Sign up</string>
+    <string name="all">TODO</string>
+    <string name="user_email">userdefault@gmail.com</string>
+    <string name="user_name">User Default</string>
+    <string name="update_profile">Save</string>
+    <string name="delete_account">Delete account</string>
+    <string name="change_password">Change password</string>
+    <string name="forget_password">Esqueceu a senha?</string>
+    <string name="title_check_email">Email verification</string>
+    <string name="recovery_account">Send</string>
+    <string name="logged">You are logged in!</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>
+    <string name="title_recover">Recover</string>
+    <string name="recover_description">Enter your email address in order to send you the steps to change your password.</string>
+    <string name="title_password_recovery">Recuperação de senha</string>
+    <string name="title_calendar">Calendar</string>
+    <string name="title_map">Map</string>
+    <string name="title_profile">Profile</string>
+    <string name="subject_title">Desenvolvimento Android</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="cancel">Voltar</string>
+    <string name="home">Home</string>
+    <string name="calendar">Calendar</string>
+    <string name="save_btn">Save</string>
+    <string name="cancel_btn">Cancel</string>
+    <string name="projeto_de_bloco">Projeto de Bloco</string>
+    <string name="menu_profile">Profile</string>
+    <string name="logo_do_aplicativo">Logo do aplicativo</string>
+    <string name="profile_email_address">Email address</string>
+    <string name="disciplinas_regulares">Disciplinas regulares:</string>
+    <string name="detail_projeto_de_bloco">Projeto de bloco:</string>
+
+    <!--    <string name="default_web_client_id">1:174272334561:android:a367f5d3d50cdb53bd85a0</string>-->
+
+
+</resources>

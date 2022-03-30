@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_initial">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.camelloncase.infnetweekly.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_detailFragment"
+            app:destination="@id/nav_detail" />
+        <action
+            android:id="@+id/action_nav_home_to_nav_initial"
+            app:destination="@id/nav_initial" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.camelloncase.infnetweekly.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_nav_initial"
+            app:destination="@id/nav_initial" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_initial"
+        android:name="com.camelloncase.infnetweekly.ui.auth.InitialFragment"
+        android:label="InitialFragment" >
+        <action
+            android:id="@+id/action_initialFragment_to_loginFragment"
+            app:destination="@id/nav_login" />
+        <action
+            android:id="@+id/action_initialFragment_to_registerFragment"
+            app:destination="@id/nav_register" />
+        <action
+            android:id="@+id/action_initialFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_login"
+        android:name="com.camelloncase.infnetweekly.ui.auth.LoginFragment"
+        android:label="LoginFragment" >
+        <action
+            android:id="@+id/action_loginFragment_to_initialFragment"
+            app:destination="@id/nav_initial" />
+        <action
+            android:id="@+id/action_loginFragment_to_recoverFragment"
+            app:destination="@id/nav_recover" />
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_recover"
+        android:name="com.camelloncase.infnetweekly.ui.auth.RecoverFragment"
+        android:label="RecoverFragment" >
+        <action
+            android:id="@+id/action_recoverFragment_to_loginFragment"
+            app:destination="@id/nav_login" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_register"
+        android:name="com.camelloncase.infnetweekly.ui.auth.RegisterFragment"
+        android:label="RegisterFragment" >
+        <action
+            android:id="@+id/action_registerFragment_to_initialFragment"
+            app:destination="@id/nav_initial" />
+        <action
+            android:id="@+id/action_registerFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_detail"
+        android:name="com.camelloncase.infnetweekly.ui.detail.DetailFragment"
+        android:label="Detalhe da semana"
+        tools:layout="@layout/fragment_detail" >
+        <argument
+            android:name="weekAlias"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="weekStart"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="weekObservations"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="weekRegular"
+            android:defaultValue=""
+            app:argType="string" />
+        <argument
+            android:name="weekProject"
+            android:defaultValue=""
+            app:argType="string" />
+        <action
+            android:id="@+id/action_detailFragment_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+
+</navigation>
