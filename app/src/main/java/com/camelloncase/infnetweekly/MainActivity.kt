@@ -22,7 +22,6 @@ class MainActivity : AppCompatActivity() {
     private lateinit var appBarConfiguration: AppBarConfiguration
     private lateinit var binding: ActivityMainBinding
     private lateinit var toolbar: Toolbar
-    private lateinit var toolbarTitle: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -31,9 +30,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         toolbar = binding.appBarMain.customToolbar
-        toolbarTitle = binding.appBarMain.customToolbarTitle
-        val customFontFamily = Typeface.createFromAsset(this.assets, "font/kaushan_script.ttf")
-        toolbarTitle.setTypeface(customFontFamily)
         setSupportActionBar(toolbar)
 
         val drawerLayout: DrawerLayout = binding.drawerLayout
@@ -46,10 +42,7 @@ class MainActivity : AppCompatActivity() {
                 R.id.nav_register -> enablingAppToolbar("gone")
                 R.id.nav_recover -> enablingAppToolbar("gone")
                 R.id.nav_initial -> enablingAppToolbar("gone")
-                R.id.nav_detail -> {
-                    enablingAppToolbar("gone")
-//                    binding.appBarMain.toolbar = "Detail"
-                }
+                R.id.nav_detail -> enablingAppToolbar("gone")
                 else -> enablingAppToolbar("visible")
             }
         }

@@ -15,15 +15,8 @@
             android:id="@+id/custom_toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary">
-
-            <TextView
-                android:id="@+id/custom_toolbar_title"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/home"
-                android:textColor="#E0F2F1"
-                android:textSize="24sp" />
+            android:background="?attr/colorPrimary"
+            android:theme="@style/Theme.InfnetWeekly.PopupOverlay" >
 
         </androidx.appcompat.widget.Toolbar>
 
