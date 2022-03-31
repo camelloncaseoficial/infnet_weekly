@@ -51,9 +51,9 @@
                         android:layout_marginTop="30dp"
                         android:gravity="center"
                         android:text="2022 Trim 1 - Semana 7"
-                        android:fontFamily="@font/rock_salt"
+                        android:fontFamily="@font/kaushan_script"
                         android:textColor="@color/black"
-                        android:textSize="18sp" />
+                        android:textSize="24sp" />
 
                     <TextView
                         android:id="@+id/week_start_textView"
@@ -85,10 +85,10 @@
                         android:layout_marginTop="15dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="Observações: "
-                        android:fontFamily="@font/rock_salt"
+                        android:text="@string/observacoes"
+                        android:fontFamily="@font/kaushan_script"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/observations_textView"
@@ -109,9 +109,9 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
                         android:text="@string/disciplinas_regulares"
-                        android:fontFamily="@font/rock_salt"
+                        android:fontFamily="@font/kaushan_script"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/regular_textView"
@@ -132,9 +132,9 @@
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
                         android:text="@string/detail_projeto_de_bloco"
-                        android:fontFamily="@font/rock_salt"
+                        android:fontFamily="@font/kaushan_script"
                         android:textColor="@color/black"
-                        android:textSize="14sp" />
+                        android:textSize="18sp" />
 
                     <TextView
                         android:id="@+id/project_textView"
@@ -178,10 +178,10 @@
                         android:layout_width="wrap_content"
                         android:layout_height="48dp"
                         android:background="@drawable/ic_buttom"
-                        android:paddingLeft="40dp"
-                        android:paddingRight="40dp"
-                        android:fontFamily="@font/rock_salt"
-                        android:textSize="11sp"
+                        android:paddingLeft="50dp"
+                        android:paddingRight="50dp"
+                        android:fontFamily="@font/patrick_hand"
+                        android:textSize="16sp"
                         android:text="@string/cancel"
                         android:textColor="@color/white" />
                 </LinearLayout>

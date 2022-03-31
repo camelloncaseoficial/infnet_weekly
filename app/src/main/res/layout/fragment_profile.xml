@@ -61,7 +61,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="User name"
-                    android:fontFamily="@font/rock_salt"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/kaushan_script"
                     android:textColor="@color/black"/>
 
                 <TextView
@@ -81,7 +82,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/profile_email_address"
-                    android:fontFamily="@font/rock_salt"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/kaushan_script"
                     android:textColor="@color/black"/>
 
                 <TextView
@@ -102,12 +104,12 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="20dp"
-                android:fontFamily="@font/rock_salt"
                 android:text="Logout"
                 android:background="@drawable/ic_buttom"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
-                android:textSize="12sp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:fontFamily="@font/patrick_hand"
+                android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.503"

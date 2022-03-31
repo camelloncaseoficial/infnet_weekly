@@ -20,45 +20,47 @@
         app:layout_constraintTop_toTopOf="parent"
         tools:ignore="UseCompoundDrawables">
 
+        <TextView
+            android:id="@+id/title_textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:fontFamily="@font/kaushan_script"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="45sp"
+            android:textStyle="bold" />
+
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="130dp"
-            android:layout_height="130dp"
-            android:layout_marginTop="50dp"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginTop="20dp"
             android:contentDescription="@string/logo_do_aplicativo"
             app:srcCompat="@drawable/ic_infnetweekly"
             tools:ignore="VectorDrawableCompat" />
 
         <TextView
-            android:id="@+id/title_textView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:fontFamily="@font/kaushan_script"
-            android:gravity="center"
-            android:text="@string/app_name"
-            android:textColor="@color/black"
-            android:textSize="40sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="15dp"
-            android:fontFamily="@font/covered_by_your_grace"
+            android:fontFamily="@font/patrick_hand"
             android:gravity="center"
             android:text="@string/app_name_description"
             android:textColor="@color/black"
-            android:textSize="25sp" />
+            android:textSize="20sp" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/rock_salt"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:fontFamily="@font/patrick_hand"
             android:gravity="center"
             android:text="@string/esti"
             android:textColor="@color/black"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -78,10 +80,10 @@
             android:layout_height="48dp"
             android:layout_marginTop="32dp"
             android:background="@drawable/ic_buttom"
-            android:paddingLeft="30dp"
-            android:paddingRight="30dp"
-            android:fontFamily="@font/rock_salt"
-            android:textSize="11sp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="16sp"
             android:text="@string/login"
             android:textColor="@color/white" />
 
@@ -96,10 +98,10 @@
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
-        android:gravity="center"
+        android:gravity="end"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -109,20 +111,21 @@
             android:id="@+id/textView3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/covered_by_your_grace"
+            android:layout_marginEnd="7dp"
+            android:fontFamily="@font/patrick_hand"
             android:textColor="@color/black"
             android:text="@string/text_signup"
-            android:textSize="20sp" />
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/signUpTextView"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:padding="10dp"
-            android:fontFamily="@font/rock_salt"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/kaushan_script"
             android:text="@string/link_signup"
             android:textColor="@color/esti_blue"
-            android:textSize="18sp" />
+            android:textSize="20sp" />
     </LinearLayout>
 
     <ProgressBar

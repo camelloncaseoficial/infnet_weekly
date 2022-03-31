@@ -5,6 +5,7 @@
     android:id="@+id/navigation_recover"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_white"
     tools:context=".ui.auth.RecoverFragment">
 
     <ImageView
@@ -35,10 +36,10 @@
             android:layout_marginStart="20dp"
             android:layout_marginEnd="20dp"
             android:gravity="center"
-            android:fontFamily="@font/rock_salt"
+            android:fontFamily="@font/patrick_hand"
             android:textColor="@color/black"
             android:text="@string/title_password_recovery"
-            android:textSize="20sp" />
+            android:textSize="30sp" />
 
         <TextView
             android:id="@+id/textView4"
@@ -48,7 +49,7 @@
             android:layout_marginEnd="20dp"
             android:layout_marginTop="20sp"
             android:gravity="center"
-            android:fontFamily="@font/covered_by_your_grace"
+            android:fontFamily="@font/patrick_hand"
             android:text="@string/recover_description"
             android:textColor="@color/black"
             android:textSize="20sp"/>
@@ -67,10 +68,10 @@
             android:drawablePadding="16dp"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:fontFamily="@font/rock_salt"
-            android:textColor="@color/black"
-            android:textSize="13sp"
-            android:padding="7dp" />
+            android:padding="10dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="20sp"
+            android:textColor="@color/black"/>
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/sendEmailAppCompatButton"
@@ -80,10 +81,10 @@
             android:layout_marginTop="32dp"
             android:layout_marginBottom="15dp"
             android:background="@drawable/ic_buttom"
-            android:paddingLeft="40dp"
-            android:paddingRight="40dp"
-            android:fontFamily="@font/rock_salt"
-            android:textSize="12sp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="16sp"
             android:text="@string/recovery_account"
             android:textColor="@color/white" />
 

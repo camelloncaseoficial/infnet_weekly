@@ -6,6 +6,7 @@
     android:id="@+id/navigation_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_white"
     tools:context=".ui.auth.LoginFragment">
 
     <LinearLayout
@@ -44,11 +45,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="30dp"
-            android:fontFamily="@font/rock_salt"
+            android:fontFamily="@font/patrick_hand"
             android:gravity="center"
             android:text="Login"
             android:textColor="@color/black"
-            android:textSize="20sp" />
+            android:textSize="40sp" />
     </LinearLayout>
 
     <LinearLayout
@@ -75,9 +76,9 @@
             android:drawablePadding="16dp"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:padding="7dp"
-            android:fontFamily="@font/rock_salt"
-            android:textSize="13sp"
+            android:padding="10dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textColorHint="@color/black_40" />
 
@@ -92,12 +93,11 @@
             android:background="@drawable/ic_field"
             android:drawableStart="@drawable/ic_lock"
             android:drawablePadding="16dp"
-            android:ems="10"
             android:hint="@string/password"
             android:inputType="textPassword"
-            android:padding="7dp"
-            android:fontFamily="@font/rock_salt"
-            android:textSize="13sp"
+            android:padding="10dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textColorHint="@color/black_40" />
 
@@ -105,9 +105,10 @@
             android:id="@+id/recoveryAccountTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="24dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="24dp"
             android:gravity="end"
-            android:fontFamily="@font/covered_by_your_grace"
+            android:fontFamily="@font/patrick_hand"
             android:text="@string/forget_password"
             android:textColor="@color/black"
             android:textSize="20sp" />
@@ -131,10 +132,10 @@
             android:layout_height="48dp"
             android:layout_marginEnd="30dp"
             android:background="@drawable/ic_buttom"
-            android:paddingLeft="40dp"
-            android:paddingRight="40dp"
-            android:fontFamily="@font/rock_salt"
-            android:textSize="11sp"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="16sp"
             android:text="@string/signup"
             android:textColor="@color/white" />
 
@@ -143,11 +144,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/ic_buttom"
-            android:paddingLeft="40dp"
-            android:paddingRight="40dp"
-            android:fontFamily="@font/rock_salt"
+            android:paddingLeft="50dp"
+            android:paddingRight="50dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="16sp"
             android:text="@string/cancel"
-            android:textSize="11sp"
             android:textColor="@color/white" />
     </LinearLayout>
 

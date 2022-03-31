@@ -5,6 +5,7 @@
     android:id="@+id/navigation_register"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/light_white"
     tools:context=".ui.auth.RegisterFragment">
 
     <LinearLayout
@@ -74,9 +75,9 @@
             android:drawablePadding="16dp"
             android:hint="@string/email"
             android:inputType="textEmailAddress"
-            android:padding="7dp"
-            android:fontFamily="@font/rock_salt"
-            android:textSize="13sp"
+            android:padding="10dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textColorHint="@color/black_40" />
 
@@ -94,9 +95,9 @@
             android:hint="@string/password"
             android:inputType="textPassword"
             android:maxLength="16"
-            android:padding="7dp"
-            android:fontFamily="@font/rock_salt"
-            android:textSize="13sp"
+            android:padding="10dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textColorHint="@color/black_40" />
 
@@ -114,9 +115,9 @@
             android:hint="@string/repeat_password"
             android:inputType="textPassword"
             android:maxLength="16"
-            android:padding="7dp"
-            android:fontFamily="@font/rock_salt"
-            android:textSize="13sp"
+            android:padding="10dp"
+            android:fontFamily="@font/patrick_hand"
+            android:textSize="20sp"
             android:textColor="@color/black"
             android:textColorHint="@color/black_40" />
 
@@ -133,11 +134,10 @@
                 android:layout_marginTop="15dp"
                 android:layout_marginEnd="30dp"
                 android:background="@drawable/ic_buttom"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
-                android:fontFamily="@font/rock_salt"
-                android:textSize="12sp"
-                android:textStyle=""
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:fontFamily="@font/patrick_hand"
+                android:textSize="16sp"
                 android:text="Cadastrar"
                 android:textColor="@color/white" />
 
@@ -147,10 +147,10 @@
                 android:layout_height="48dp"
                 android:layout_marginTop="15dp"
                 android:background="@drawable/ic_buttom"
-                android:paddingLeft="40dp"
-                android:paddingRight="40dp"
-                android:fontFamily="@font/rock_salt"
-                android:textSize="12sp"
+                android:paddingLeft="50dp"
+                android:paddingRight="50dp"
+                android:fontFamily="@font/patrick_hand"
+                android:textSize="16sp"
                 android:text="@string/cancel"
                 android:textColor="@color/white" />
         </LinearLayout>

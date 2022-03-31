@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Infnet Weekly</string>
     <string name="app_name_description">um calendário acadêmico da</string>
-    <string name="esti">ESTI</string>
+    <string name="esti">Escola Superior de Tecnologia da Informação</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="nav_header_title">Instituto Infnet</string>
@@ -22,7 +22,7 @@
     <string name="repeat_password">Confirm password</string>
     <string name="signup">Entrar</string>
     <string name="text_signup">Não tem uma conta?</string>
-    <string name="link_signup">Sign up</string>
+    <string name="link_signup">Cadastre-se</string>
     <string name="all">TODO</string>
     <string name="user_email">userdefault@gmail.com</string>
     <string name="user_name">User Default</string>
@@ -58,6 +58,7 @@
     <string name="profile_email_address">Email address</string>
     <string name="disciplinas_regulares">Disciplinas regulares:</string>
     <string name="detail_projeto_de_bloco">Projeto de bloco:</string>
+    <string name="observacoes">Observações:</string>
 
     <!--    <string name="default_web_client_id">1:174272334561:android:a367f5d3d50cdb53bd85a0</string>-->
 
