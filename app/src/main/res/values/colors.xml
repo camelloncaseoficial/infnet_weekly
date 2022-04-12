@@ -12,4 +12,6 @@
     <color name="black_40">#999999</color>
     <color name="white">#FFFFFFFF</color>
     <color name="light_white">#D2D2D2</color>
+    <color name="light_red">#EA9999</color>
+    <color name="light_rose">#F4CCCC</color>
 </resources>

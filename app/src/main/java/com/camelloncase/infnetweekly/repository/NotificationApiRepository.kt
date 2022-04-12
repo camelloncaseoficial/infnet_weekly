@@ -15,6 +15,10 @@ class NotificationApiRepository {
         return RetrofitInstance.api.getNotification()
     }
 
+    suspend fun getNotificationByWeek(begin: String, finish: String): Response<List<Notification>> {
+        return RetrofitInstance.api.getNotificationByCurrentWeek(begin, finish)
+    }
+
     suspend fun getNotificationById(uuid: UUID): Response<Notification> {
         return RetrofitInstance.api.getNotificationById(uuid)
     }
