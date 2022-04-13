@@ -85,23 +85,23 @@
         android:label="Detalhe da semana"
         tools:layout="@layout/fragment_detail" >
         <argument
-            android:name="weekAlias"
+            android:name="school_day"
             android:defaultValue=""
             app:argType="string" />
         <argument
-            android:name="weekStart"
+            android:name="day"
             android:defaultValue=""
             app:argType="string" />
         <argument
-            android:name="weekObservations"
+            android:name="observations"
             android:defaultValue=""
             app:argType="string" />
         <argument
-            android:name="weekRegular"
+            android:name="regular"
             android:defaultValue=""
             app:argType="string" />
         <argument
-            android:name="weekProject"
+            android:name="project"
             android:defaultValue=""
             app:argType="string" />
         <action
