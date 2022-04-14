@@ -16,7 +16,7 @@ class DetailFragment : Fragment() {
     private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
     private lateinit var day: TextView
-    private lateinit var start: TextView
+    private lateinit var schoolDay: TextView
     private lateinit var observations: TextView
     private lateinit var regular: TextView
     private lateinit var project: TextView
@@ -51,10 +51,10 @@ class DetailFragment : Fragment() {
 
     private fun initWidgetComponents() {
         day = binding.dayTextView
-        start = binding.
-        weekObservations = binding.observationsTextView
-        weekRegular = binding.regularTextView
-        weekProject = binding.projectTextView
+        schoolDay = binding.schoolDayTextView
+        observations = binding.observationsTextView
+        regular = binding.regularTextView
+        project = binding.projectTextView
         cancelButton = binding.cancelButton
     }
 

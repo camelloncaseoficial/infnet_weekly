@@ -85,11 +85,11 @@
         android:label="Detalhe da semana"
         tools:layout="@layout/fragment_detail" >
         <argument
-            android:name="school_day"
+            android:name="day"
             android:defaultValue=""
             app:argType="string" />
         <argument
-            android:name="day"
+            android:name="schoolDay"
             android:defaultValue=""
             app:argType="string" />
         <argument

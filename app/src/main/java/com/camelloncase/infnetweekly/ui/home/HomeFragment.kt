@@ -96,11 +96,11 @@ class HomeFragment : Fragment(), NotificationAdapter.OnItemClickListener  {
     private fun goToManagementScreen(notification: Notification) {
 
         val action = HomeFragmentDirections.actionNavHomeToDetailFragment()
-        action.weekAlias = notification.schoolDay
-        action.weekStart = notification.schoolDay
-        action.weekObservations = notification.observations
-        action.weekRegular = notification.regularActivity
-        action.weekProject = notification.projectActivity
+        action.day = notification.day
+        action.schoolDay = notification.schoolDay
+        action.observations = notification.observations
+        action.regular = notification.regularActivity
+        action.project = notification.projectActivity
 
         findNavController().navigate(action)
     }

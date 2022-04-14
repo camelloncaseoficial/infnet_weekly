@@ -19,7 +19,6 @@
     </style>
 
     <style name="Theme.InfnetWeekly.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" >
-        <item name="colorOnPrimary">@color/white</item>
     </style>
 
     <style name="Theme.InfnetWeekly.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" >
