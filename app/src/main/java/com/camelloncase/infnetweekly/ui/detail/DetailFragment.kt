@@ -15,11 +15,11 @@ class DetailFragment : Fragment() {
 
     private var _binding: FragmentDetailBinding? = null
     private val binding get() = _binding!!
-    private lateinit var weekAlias: TextView
-    private lateinit var weekStart: TextView
-    private lateinit var weekObservations: TextView
-    private lateinit var weekRegular: TextView
-    private lateinit var weekProject: TextView
+    private lateinit var day: TextView
+    private lateinit var schoolDay: TextView
+    private lateinit var observations: TextView
+    private lateinit var regular: TextView
+    private lateinit var project: TextView
     private lateinit var cancelButton: Button
 
     override fun onCreateView(
@@ -36,11 +36,11 @@ class DetailFragment : Fragment() {
 
         val args = DetailFragmentArgs.fromBundle(requireArguments())
 
-        binding.weekAliasTextView.text = args.weekAlias
-        binding.weekStartTextView.text = args.weekStart
-        binding.observationsTextView.text = args.weekObservations
-        binding.regularTextView.text = args.weekRegular
-        binding.projectTextView.text = args.weekProject
+        binding.dayTextView.text = args.day
+        binding.schoolDayTextView.text = args.schoolDay
+        binding.observationsTextView.text = args.observations
+        binding.regularTextView.text = args.regular
+        binding.projectTextView.text = args.project
 
         binding.cancelButton.setOnClickListener {
             goToHomeScreen()
@@ -50,11 +50,11 @@ class DetailFragment : Fragment() {
     }
 
     private fun initWidgetComponents() {
-        weekAlias = binding.weekAliasTextView
-        weekStart = binding.weekStartTextView
-        weekObservations = binding.observationsTextView
-        weekRegular = binding.regularTextView
-        weekProject = binding.projectTextView
+        day = binding.dayTextView
+        schoolDay = binding.schoolDayTextView
+        observations = binding.observationsTextView
+        regular = binding.regularTextView
+        project = binding.projectTextView
         cancelButton = binding.cancelButton
     }
 

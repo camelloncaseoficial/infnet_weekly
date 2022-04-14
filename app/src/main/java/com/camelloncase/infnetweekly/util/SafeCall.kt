@@ -8,3 +8,10 @@ inline fun <T> safeCall(action: () -> Resource<T>): Resource<T> {
     }
 }
 
+inline fun <T> responseSafeCall(action: () -> Response<T>): Response<T> {
+    return try {
+        action()
+    } catch (e: Exception) {
+        Response.Failure(e.message ?: "An unknown error was occurred!")
+    }
+}
