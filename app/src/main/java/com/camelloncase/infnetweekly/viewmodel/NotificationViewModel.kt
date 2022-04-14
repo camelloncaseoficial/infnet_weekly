@@ -14,6 +14,7 @@ class NotificationViewModel(private val repository: NotificationApiRepository): 
     val apiResponse: MutableLiveData<Response<Notification>> = MutableLiveData()
     val notificationById: MutableLiveData<Response<Notification>> = MutableLiveData()
     val allNotificationsByYear: MutableLiveData<Response<List<Notification>>> = MutableLiveData()
+    val allNotificationsByWeek: MutableLiveData<Response<List<Notification>>> = MutableLiveData()
     val allNotificationsByQueryMap: MutableLiveData<Response<List<Notification>>> = MutableLiveData()
 
     fun getNotification() {
@@ -28,6 +29,13 @@ class NotificationViewModel(private val repository: NotificationApiRepository): 
         viewModelScope.launch {
             val response = repository.getNotificationById(uuid)
             notificationById.value = response
+        }
+    }
+
+    fun getNotificationByWeek(begin: String, finish: String) {
+        viewModelScope.launch {
+            val response = repository.getNotificationByWeek(begin, finish)
+            allNotificationsByWeek.value = response
         }
     }
 

@@ -18,6 +18,13 @@ interface NotificationApi {
         @Path("weekUUID") uuid: UUID
     ) : Response<Notification>
 
+//    ?start_date=2022-04-11&end_date=2022-04-16
+    @GET("days")
+    suspend fun getNotificationByCurrentWeek(
+        @Query("start_date") begin: String,
+        @Query("end_date") finish: String
+    ) : Response<List<Notification>>
+
     @GET("weeks")
     suspend fun getAllNotificationByYear(
         @Query("yearNumber") number: Int,

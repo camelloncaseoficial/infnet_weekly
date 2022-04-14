@@ -18,6 +18,9 @@ import com.camelloncase.infnetweekly.databinding.AppBarMainBinding
 import com.camelloncase.infnetweekly.databinding.FragmentHomeBinding
 import com.camelloncase.infnetweekly.model.Notification
 import com.camelloncase.infnetweekly.repository.NotificationApiRepository
+import com.camelloncase.infnetweekly.util.Response
+import com.camelloncase.infnetweekly.util.formattedCurrentDate
+import com.camelloncase.infnetweekly.util.showMessageToUser
 import com.camelloncase.infnetweekly.viewmodel.NotificationViewModel
 import com.camelloncase.infnetweekly.viewmodel.NotificationViewModelFactory
 import com.google.firebase.auth.FirebaseAuth
@@ -56,15 +59,18 @@ class HomeFragment : Fragment(), NotificationAdapter.OnItemClickListener  {
         val viewModelFactory = NotificationViewModelFactory(repository)
         viewModel = ViewModelProvider(this, viewModelFactory)[NotificationViewModel::class.java]
 
-        viewModel.getAllNotificationByYear(2022, "week_create_date", "desc")
+        val listOfDays = formattedCurrentDate("yyyy-MM-dd")
+        viewModel.getNotificationByWeek(listOfDays[0], listOfDays[1])
 
-        viewModel.allNotificationsByYear.observe(viewLifecycleOwner, Observer { response ->
+        viewModel.allNotificationsByWeek.observe(viewLifecycleOwner, Observer { response ->
             if (response.isSuccessful) {
                 response.body()?.let { notificationAdapter.setData(it) }
             } else {
-                Toast.makeText(context, response.code(), Toast.LENGTH_SHORT).show()
+                showMessageToUser(context, response.code().toString())
             }
         })
+
+
 
         return binding.root
     }
@@ -90,11 +96,11 @@ class HomeFragment : Fragment(), NotificationAdapter.OnItemClickListener  {
     private fun goToManagementScreen(notification: Notification) {
 
         val action = HomeFragmentDirections.actionNavHomeToDetailFragment()
-        action.weekAlias = notification.weekAlias
-        action.weekStart = notification.weekStart
-        action.weekObservations = notification.weekObservations
-        action.weekRegular = notification.weekRegularTypicalActivities
-        action.weekProject = notification.weekProjectTypicalActivities
+        action.day = notification.day
+        action.schoolDay = notification.schoolDay
+        action.observations = notification.observations
+        action.regular = notification.regularActivity
+        action.project = notification.projectActivity
 
         findNavController().navigate(action)
     }
