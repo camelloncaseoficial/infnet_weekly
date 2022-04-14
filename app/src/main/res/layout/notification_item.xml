@@ -3,6 +3,7 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/notification_card_view"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:layout_margin="5dp"
@@ -11,12 +12,12 @@
     app:cardElevation="3dp">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/cardConstraintLayout"
+        android:id="@+id/card_constraint_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
         <ImageView
-            android:id="@+id/ifnetImageView"
+            android:id="@+id/ifnet_image_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="15dp"
@@ -30,7 +31,7 @@
             app:srcCompat="@drawable/ic_infnet_esti_logo" />
 
         <TextView
-            android:id="@+id/weekAliasTextView"
+            android:id="@+id/day_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
@@ -39,12 +40,12 @@
             android:textColor="@color/black"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.12"
-            app:layout_constraintStart_toEndOf="@+id/ifnetImageView"
+            app:layout_constraintStart_toEndOf="@+id/ifnet_image_view"
             app:layout_constraintTop_toTopOf="parent"
             tools:text="Ma Hell's" />
 
         <TextView
-            android:id="@+id/observationsTextView"
+            android:id="@+id/observations_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -52,13 +53,11 @@
             android:fontFamily="@font/patrick_hand"
             android:textAppearance="?attr/textAppearanceBody2"
             android:textColor="@color/black"
-            android:maxLines="1"
-            android:ellipsize="end"
-            android:autoSizeTextType="uniform"
+            android:maxLength="13"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.12"
-            app:layout_constraintStart_toEndOf="@+id/ifnetImageView"
-            app:layout_constraintTop_toBottomOf="@+id/weekAliasTextView"
+            app:layout_constraintStart_toEndOf="@+id/ifnet_image_view"
+            app:layout_constraintTop_toBottomOf="@+id/day_text_view"
             tools:text="Munich Helles" />
         <View
             android:id="@+id/divider"
@@ -67,19 +66,19 @@
             android:layout_marginTop="15dp"
             android:layout_marginBottom="10dp"
             android:background="?android:attr/listDivider"
-            app:layout_constraintBottom_toTopOf="@+id/createDateTextView"
+            app:layout_constraintBottom_toTopOf="@+id/school_day_text_view"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/observationsTextView"
+            app:layout_constraintTop_toBottomOf="@+id/observations_text_view"
             app:layout_constraintVertical_bias="0.555" />
 
         <TextView
-            android:id="@+id/createDateTextView"
+            android:id="@+id/school_day_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/patrick_hand"
-            android:textAppearance="?attr/textAppearanceBody2"
+            android:textAppearance="?attr/textAppearanceBody1"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -88,13 +87,13 @@
             tools:text="Created in 20 FEV 22" />
 
         <TextView
-            android:id="@+id/updateDateTextView"
+            android:id="@+id/course_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="16dp"
             android:layout_marginBottom="10dp"
             android:fontFamily="@font/patrick_hand"
-            android:textAppearance="?attr/textAppearanceBody2"
+            android:textAppearance="?attr/textAppearanceBody1"
             android:textColor="@color/black"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
