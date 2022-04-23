@@ -1,60 +1,34 @@
 package com.camelloncase.infnetweekly.model
 
-import com.google.gson.annotations.SerializedName
+import com.squareup.moshi.Json
 
-public class Notification(
 
-//    @SerializedName("week_id")
-//    val weekId: String,
-//
-//    @SerializedName("week_alias")
-//    val weekAlias: String,
-//
-//    @SerializedName("year")
-//    val year: Int,
-//
-//    @SerializedName("week_start")
-//    val weekStart: String,
-//
-//    @SerializedName("week_observations")
-//    val weekObservations: String,
-//
-//    @SerializedName("week_regular_typical_activities")
-//    val weekRegularTypicalActivities: String,
-//
-//    @SerializedName("week_project_typical_activities")
-//    val weekProjectTypicalActivities: String,
-//
-//    @SerializedName("week_create_date")
-//    val weekCreateDate: String,
-//
-//    @SerializedName("week_update_date")
-//    val weekUpdateDate: String,
+data class Notification(
 
-    @SerializedName("id")
+    @Json(name ="id")
     val id: String,
 
-    @SerializedName("day")
+    @Json(name ="day")
     val day: String,
 
-    @SerializedName("school_day")
+    @Json(name ="school_day")
     val schoolDay: String,
 
-    @SerializedName("observations")
+    @Json(name ="observations")
     val observations: String,
 
-    @SerializedName("regular_activity")
+    @Json(name ="regular_activity")
     val regularActivity: String,
 
-    @SerializedName("project_activity")
+    @Json(name ="project_activity")
     val projectActivity: String,
 
-    @SerializedName("course")
+    @Json(name ="course")
     val course: String,
 
-    @SerializedName("create_date")
+    @Json(name ="create_date")
     val createDate: String,
 
-    @SerializedName("update_date")
-    val updateDate: String,
+    @Json(name ="update_date")
+    val updateDate: String? = null,
 )
