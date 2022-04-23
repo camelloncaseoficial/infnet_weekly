@@ -1,8 +1,14 @@
 package com.camelloncase.infnetweekly.api
 
 import retrofit2.Retrofit
-import retrofit2.converter.gson.GsonConverterFactory
 import com.camelloncase.infnetweekly.util.Constants.Companion.BASE_URL
+import com.squareup.moshi.Moshi
+import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
+import retrofit2.converter.moshi.MoshiConverterFactory
+
+private val moshi = Moshi.Builder()
+    .add(KotlinJsonAdapterFactory())
+    .build()
 
 object RetrofitInstance {
 
@@ -10,7 +16,7 @@ object RetrofitInstance {
 
         Retrofit.Builder()
             .baseUrl(BASE_URL)
-            .addConverterFactory(GsonConverterFactory.create())
+            .addConverterFactory(MoshiConverterFactory.create(moshi))
             .build()
     }
 
